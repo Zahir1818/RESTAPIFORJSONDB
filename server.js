@@ -1,6 +1,7 @@
 const express = require('express');
 const colors = require('colors');
 const dotenv = require('dotenv').config();
+const userRoute = require('./routes/user');
 
 
 
@@ -18,6 +19,8 @@ app.use(express.json());
 app.use(express.urlencoded( { extended : false } ));
 
 
+//api routes
+app.use('/api/v1/user', userRoute);
 
 //listen port
 app.listen(PORT, () => {

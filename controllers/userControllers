@@ -1,0 +1,22 @@
+/**
+ * @desc get all users
+ * @name GET api/vi/user
+ * @access public
+ * @param req 
+ * @param res 
+ */
+
+const getAllUser = (req, res) => {
+
+    res.send('Hi I am Zahir');
+
+}
+
+
+
+
+
+//exprort user route
+module.exports = {
+    getAllUser
+}
